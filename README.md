@@ -28,7 +28,7 @@ Ensure the following tools are installed on your system before you proceed:
 Clone this repository to get started with your local setup:
 
 ```bash
-git clone https://github.com/seth_dijkstra/challenge3.git
+git clone https://github.com/SethDijkstra/challenge3.git
 cd challenge3
 ```
 
@@ -39,16 +39,6 @@ Execute the following commands to build and run the Docker containers:
 ```bash
 docker-compose build
 docker-compose up -d
-```
-
-### Database Initialization
-
-Ensure the `init.sql` file is properly set up to initialize the MariaDB database:
-
-```dockerfile
-# Dockerfile for MariaDB
-FROM mariadb:latest
-COPY init/init.sql /docker-entrypoint-initdb.d/
 ```
 
 ### Verify the Setup
@@ -103,5 +93,4 @@ If a port conflict occurs, make sure that the port bindings are correctly config
 ## Conclusion
 
 This README provides a detailed guide for setting up, scaling, and troubleshooting a full-stack Node.js application using Docker. This environment supports development and testing with robust scalability options.
-
 
